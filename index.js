@@ -36,7 +36,7 @@ function animatePress(currentColour){
     }, 100);
 }
 
-$(document).keypress(function(){
+$(document).on("keypress touchstart", function(){
     if (started == false){
         nextSequence();
         started = true;
