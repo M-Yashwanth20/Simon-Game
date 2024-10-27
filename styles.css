@@ -1,0 +1,72 @@
+body {
+  text-align: center;
+  background-color: #011F3F;
+}
+
+#level-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3rem;
+  margin: 5%;
+  color: #FEF2BF;
+}
+
+.container {
+  display: flex; /* Use flexbox for alignment */
+  flex-direction: column; /* Stack rows vertically */
+  align-items: center; /* Center items horizontally */
+  width: 100%; /* Full width */
+}
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.row {
+  display: flex; /* Use flexbox for rows */
+  justify-content: center; /* Center buttons within rows */
+}
+
+.btn {
+  margin: 10px; /* Adjusted margin for smaller screens */
+  display: inline-block;
+  height: 150px; /* Adjusted height for better fit on mobile */
+  width: 150px; /* Adjusted width for better fit on mobile */
+  border: 10px solid black;
+  border-radius: 20%;
+}
+
+/* Button colors */
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+/* Pressed state style */
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  #level-title {
+      font-size: 2rem; /* Smaller title size on mobile */
+  }
+
+  .btn {
+      height: 100px; /* Smaller button height for mobile */
+      width: 100px; /* Smaller button width for mobile */
+      margin: 5px; /* Less margin on mobile */
+  }
+}
